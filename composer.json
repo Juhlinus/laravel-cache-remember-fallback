@@ -1,0 +1,28 @@
+{
+    "name": "juhlinus/laravel-cache-remember-fallback",
+    "require": {
+        "illuminate/cache": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+        "illuminate/support": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+        "illuminate/config": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+        "predis/predis": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Linus Juhlin",
+            "email": "linus.juhlin@protonmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Juhlinus\\CacheFallback\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Juhlinus\\CacheFallback\\CacheFallbackServiceProvider"
+        ]
+      }
+    }
+}
